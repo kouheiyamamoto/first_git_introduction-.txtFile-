@@ -1,0 +1,66 @@
+  # pushしたいファイルのディレクトリまで移動する
+  cd Desktop/ 
+  
+  # git用のリポジトリを作成する
+  git init
+
+  # リポジトリにファイルを登録する
+  git add .
+
+  # ファイルの変更がリポジトリに登録されたことを確認する
+  git status 
+  
+  # ファイルの変更履歴を保存する
+  git commit -m "add hello to hello.html"
+
+  # 過去のファイルの変更履歴を確認できる
+  git log
+
+  git status
+  git add . 
+  git status 
+  git commit -m "add hi to hello.html"
+  git log
+
+  # 前のコミットの内容に戻る
+  git checkout HEAD^
+
+  # 今いるブランチがどこかを確認する
+  git branch
+
+  # マスターのブランチに戻る
+  git checkout master
+
+  git branch
+
+  # 新しいブランチを作る
+  git checkout -b add_good_morning
+
+  git branch
+  git add . 
+  git commit -m "add good morning to hello.html"
+  git checkout master
+  git branch
+  git checkout add_good_morning
+  git branch
+
+  # ブランチの変更内容をマスターに合体する
+  # まずはマスターにブランチを切り替える
+  git checkout master
+
+  # 合体する
+  git merge add_good_morning
+
+  git branch
+
+  # ここからGitHubを開く
+  # GitHubの中のネコマークをクリックする
+  # New repositoryをクリックする
+
+  # ローカルリポジトリとリモートリポジトリを関連付ける
+  git remote add origin https://github.com/kouheiyamamotoios/hello3.git
+
+  # 関連付けの名前を確認するgit remote
+
+  # リモートリポジトリに変更をプッシュする
+  git push origin master 

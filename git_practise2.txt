@@ -1,0 +1,49 @@
+  # まずクローンする場合はGitのホームページのclone or downloadをクリックする
+  # リポジトリのURLをクリックする
+  # リポジトリのURLをコピーする
+
+  # プロジェクトをクローンしたいディレクトリに移動する
+  cd Desktop/
+  ls
+  
+  # リポジトリをローカル環境にコピーする
+  git clone https://github.com/kouheiyamamotoios/hello3.git
+  
+  # クローンしたディレクトリの中に移動する
+  cd hello3
+  ls
+  
+  git branch
+  git checkout -b add_introduce
+  git branch
+  git add .
+  git commit -m "add introduce"
+  git branch
+ 
+  # 新しく作ったブランチに対してpushを行う
+  git push origin add_introduce
+ 
+  # Gitのホームページ行って更新する
+  # 新しくブランチが追加される
+  # Compare & pull requestをクリック
+  # pull requestの内容を記入する
+  # pull requestを送る前にどのブランチに対してpull requestを送るのかを確認する
+  # 確認できたらCreate pull requestをクリックする
+  # 自分の変更を確認したいときは、さっき加えたブランチ名をクリックする
+  # pull requestに対してコメントをするときは、左に出てくる青い＋ボタンをクリックする
+  # コメントが書けたら
+  # Start a review → Finish your review → Submit review の順番でクリックする 
+  # コードレビューをしてもらったら
+  # Merge pull requestをクリックする
+  # Confirm mergeをクリックする
+  # Mergeが終わったら前のブランチは必要ないから
+  # Delete branchをクリックする
+  # ソースコードの画面に戻る
+  # ソースコードを選択して、変更内容が反映されているかを確認する
+  
+  git branch
+  git checkout master
+  git branch
+  
+  # 他のブランチの変更内容をmasterに合体してローカル環境に持ってくる
+  git pull origin master 
