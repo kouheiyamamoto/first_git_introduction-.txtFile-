@@ -1,4 +1,3 @@
-## git firstStep 2files
+## git firstStep two files
 
- gitが全然わからないからとりあえずコマンドをまとめときました。
-参考までにどうぞ
+ base git commands.
